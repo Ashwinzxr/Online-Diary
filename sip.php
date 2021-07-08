@@ -29,7 +29,7 @@ else
       echo "username is present";
       echo "<html>";
       echo "<br>";
-      echo "<a href='signup.html'><button>login</button></a>";
+      echo "<a href='signup.html'><button>sign up</button></a>";
       echo "</html>";
     }
     else
@@ -41,7 +41,7 @@ else
                 echo "email is present";
                 echo "<html>";
                 echo "<br>";
-                echo "<a href='signup.html'><button>login</button></a>";
+                echo "<a href='signup.html'><button>sign up</button></a>";
                 echo "</html>";
         }
         else
