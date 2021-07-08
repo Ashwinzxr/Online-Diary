@@ -23,46 +23,60 @@ if( $passw!=$rpassw)
 else 
 {       
     $sq = "SELECT * FROM users where username='$usname'";
-    $query = mysqli_query($conn,$sq);
+    $query = mysqli_query($conn,$sq) ;
     if(mysqli_num_rows($query))
     {
       echo "username is present";
+      echo "<html>";
+      echo "<br>";
+      echo "<a href='signup.html'><button>login</button></a>";
+      echo "</html>";
     }
     else
     {  
-        $in = "INSERT INTO users(email,username,password)
+        $squ="SELECT * FROM users where email='$mail'";
+        $qury= mysqli_query($conn,$squ);
+        if(mysqli_num_rows($qury))
+        {
+                echo "email is present";
+                echo "<html>";
+                echo "<br>";
+                echo "<a href='signup.html'><button>login</button></a>";
+                echo "</html>";
+        }
+        else
+        {
+                $in = "INSERT INTO users(email,username,password)
                 VALUES ('$mail','$usname','$passw')";
 
-        if ($conn->query($in) === FALSE) 
-        {
-                echo "Error: " . $in . "<br>" . $conn->error;
-        }       
-        else    
-        {
-                $sql = "CREATE TABLE $usname(
-                id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, 
-                filen TEXT NOT NULL,
-                email VARCHAR(70) NOT NULL UNIQUE        
-                )"; 
-                if(mysqli_query($conn, $sql)) 
-                { 
-                        echo "<html>";
-                        echo "<a href='login.html'><button>login</button></a>";
-                        //echo "<button>LOGIN</button>";
-                        //echo "<html> <body><h1>ACCOUNT CREATED SUCESSFULLY</h1><br><button onclick="location.href='login.html'">LOGIN PAGE</button></body></html>"; 
-                        echo "</html>";
-                } 
-                else 
+                if ($conn->query($in) === FALSE) 
                 {
-                        echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn); 
-                }  
-        }
-    }
+                        echo "Error: " . $in . "<br>" . $conn->error;
+                }       
+                else    
+                {
+                        $sql = "CREATE TABLE $usname(
+                        id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+                        filen TEXT NOT NULL,
+                        email VARCHAR(70) NOT NULL UNIQUE        
+                        )"; 
+                        if(mysqli_query($conn, $sql)) 
+                        { 
+                                echo "<html>";
+                                echo "<a href='login.html'><button>login</button></a>";
+                                echo "</html>";
+                        } 
+                        else 
+                        {
+                                echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn); 
+                        }  
+                }
+        }       
+}
         
 }
 $conn->close();
 ?>
-       
 
 
 
