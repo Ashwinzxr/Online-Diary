@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+li,a,button {
+ 	font-family: 'Poppins', sans-serif;
+ 	font-weight: 1000;
+ 	font-size: 16px;
+ 	color: black;
+ 	text-decoration: none;
+ }
+  header {
+  	height: 70px;
+  	width: 100%;
+  	background-color: black;
+  	position: fixed;
+  	display: flex;
+  	justify-content: flex-end;
+  	align-items: center;
+  	padding-right: 10%;
+  }
+ 
+  .navlinks {
+  	list-style: none;
+  }
+  .navlinks li {
+  	display: inline-block;
+  	padding: 0px 20px;
+  }
+  .navlinks li a {
+  	padding:9px 25px;
+  	background: rgb(77,217,173);
+	background: linear-gradient(248deg, rgba(77,217,173,1) 0%, rgba(0,237,235,1) 51%, rgba(66,224,188,1) 100%);
+  	border: none;
+  	border-radius: 50px;
+  	cursor: pointer;
+  	transition: all 0.3s ease 0s;
+  }
+  .navlinks li a:hover {
+  	background: rgb(77,217,173);
+	background: linear-gradient(248deg, rgba(77,217,173,0.7) 0%, rgba(0,237,235,0.7) 51%, rgba(66,224,188,0.7) 100%);
+  }
+
+  .bd {
+
+  	background: rgb(77,217,173);
+	background: linear-gradient(248deg, rgba(77,217,173,1) 0%, rgba(0,237,235,1) 51%, rgba(66,224,188,1) 100%);
+	height: 100vh;
+
+  }
+
+  .ta {
+  	padding-top: 30px;
+  	padding-left: 50px;
+  	padding-right: 50px;
+  	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform:  translate(-50%,-50%);
+  	width: 600px;
+  	height:700px;
+  	font-family: 'Roboto Condensed', sans-serif;
+  	font-size: 24px;
+  }
+
+  .name {
+  	color: white;
+  }
+  .submit {
+  	cursor: pointer;
+  	border-radius: 50px;
+  	font-size: 40px;
+  	height: 100px;
+  	width: 300px;
+  	top: 20%;
+	right: 10%;
+  	position: absolute;
+  }
+  .reset {
+  	cursor: pointer;
+  	border-radius: 50px;
+  	font-size: 40px;
+  	height: 100px;
+  	width: 300px;
+  	top: 40%;
+	right: 10%;
+  	position: absolute;
+  }
