@@ -9,12 +9,14 @@
 	<div class="loginbox">
 		<img src="user.png" class="avatar">
 			<h1>Signup</h1>
-			<form>
+			<form action="sip.php" method="POST">
+				<p>Email</p>
+				<input type="email" name="email" placeholder="eg:abc@gmail.com">
 				<p>Username</p>
-				<input type="text" name="" placeholder="Username">
+				<input type="text" name="uname" placeholder="Username">
 				<p>Enter Password</p>
-				<input type="password" name="" placeholder="password">
-				<input type="password" name="" placeholder="Repeat password">
+				<input type="password" name="pass" placeholder="password">
+				<input type="password" name="rpass" placeholder="Repeat password">
 				<input type="submit" name="" value="Signup">
 				<a href="">Return to Login page</a>
 			</form>
