@@ -76,8 +76,8 @@ li,a,button {
   	font-size: 40px;
   	height: 100px;
   	width: 300px;
-  	top: 20%;
-	right: 10%;
+  	top: 20vh;
+	right: 10vh;
   	position: absolute;
   }
   .reset {
@@ -86,7 +86,7 @@ li,a,button {
   	font-size: 40px;
   	height: 100px;
   	width: 300px;
-  	top: 40%;
-	right: 10%;
+  	top: 40vh;
+	right: 10vh;
   	position: absolute;
   }
