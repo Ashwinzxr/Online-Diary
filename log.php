@@ -4,6 +4,8 @@ $username="root";
 $password="";
 $dbname="diary";
 
+echo "<html>";
+echo "<head> <link href='signup.css' type='stylesheet'></head>";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) 
@@ -36,6 +38,7 @@ else
         echo '<meta http-equiv= "refresh" content="1; url=/DIARY-/dashboard.php"/>';
     }
 }
+echo "</html>";
 $conn->close();
 ?>    
 

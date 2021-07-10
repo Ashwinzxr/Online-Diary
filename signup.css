@@ -10,7 +10,7 @@ body {
 
 .loginbox {
 	width: 320px;
-	height: 450px;
+	height: 500px;
 	background: black;
 	color: white;
 	top: 50%;
@@ -44,7 +44,7 @@ h1 {
  	width: 100%;
  	margin-bottom: 20px;
  }
- .loginbox input[type="text"], input[type="password"] {
+ .loginbox input[type="text"], input[type="password"] ,input[type="email"]{
  	border: none;
  	border-bottom: 1px solid white;
  	background: transparent;
@@ -75,3 +75,21 @@ h1 {
   .loginbox a:hover {
   	color: white;
   }
+.btn{
+	cursor: pointer;
+ 	background: black;
+ 	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	margin-left: 600px;
+	margin-top: 600px;
+	width:200px;
+	height:60px;
+	size: 50px;
+	border-radius: 20px;
+}
+
+.btn:hover{
+	color: white;
+}

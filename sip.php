@@ -4,6 +4,9 @@ $username = "root";
 $password = "";
 $dbname = "diary";
 
+echo "<html>";
+echo "<head> <link href='signup.css' rel='stylesheet'></head>";
+
 $conn = NEW mysqli($servername, $username, $password, $dbname);
 // Checking connection
 if ($conn->connect_error) 
@@ -41,7 +44,7 @@ else
                 echo "email is present";
                 echo "<html>";
                 echo "<br>";
-                echo "<a href='signup.html'><button>sign up</button></a>";
+                echo "<a href='signup.html' ><button class='btn'>SIGN UP</button></a>";
                 echo "</html>";
         }
         else
@@ -63,7 +66,7 @@ else
                         if(mysqli_query($conn, $sql)) 
                         { 
                                 echo "<html>";
-                                echo "<a href='login.html'><button>login</button></a>";
+                                echo "<a href='login.html'><button class='btn'>LOG IN</button></a>";
                                 echo "</html>";
                         } 
                         else 
@@ -73,7 +76,7 @@ else
                 }
         }       
 }
-        
+echo "</html>"    ;    
 }
 $conn->close();
 ?>
