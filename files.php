@@ -2,25 +2,22 @@
 session_start();
 echo "<html>";
 echo "<body>";
-$conn = mysqli_connect("localhost","root","","Audio");
+$conn=mysqli_connect("localhost","root","","diary");
 if(!$conn)
 {
     echo "failed";
 
 }
-//error reporting 
-ini_set ("display_errors", "1");
-error_reporting(E_ALL);
-echo '<h1>HERE ARE YOUR FILES TO DOWNLOAD</h1>';
-$_SESSION
-$batch = $_SESSION['batch'];
 
-$query = "SELECT * FROM $batch";
+
+echo '<h1>HERE ARE YOUR FILES TO DOWNLOAD</h1>';
+$username=$_SESSION['uname'];
+
+$query = "SELECT * FROM $username";
 $run = mysqli_query($conn, $query);
 if(!$run)
 {
     echo mysqli_error($conn);
-
 }
 echo "<div id='container'>";
 
@@ -28,10 +25,10 @@ echo "<div id='container'>";
     while($row = mysqli_fetch_assoc($run)) 
     {
         echo "<tr>";
-            echo "<td> {$row['Sno']} </td>";
-            echo "<td>{$row['Filename']}</td>";
-            echo "<td>{$row['TeacherName']}</td>";
-            $filename = "/Audio-transcription/Source/".$row['Filename'];  
+            echo "<td> {$row['id']} </td>";
+            echo "<td>{$row['filen']}</td>";
+            echo "<td>{$row['dof']}</td>";
+            $filename = "/DIARY/Source/".$row['filen'];  
             echo '<td><a href= "'.$filename.'" target="_blank"><button id="sub">Download</button></a></td>';
         echo "</tr>";
         echo "</div>";
@@ -39,18 +36,20 @@ echo "<div id='container'>";
     echo "</table>";
     echo "</body>";
     echo "</html>";
+$conn->close();
 ?>
 <html>
     <head>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
 
-    <link rel="stylesheet" href="stu.css"/>
+    <link rel="stylesheet" href="file.css"/>
 </head>
 <body>
     <div>
 
     <br>
-    <button id="signout" onclick="location.href='login.html'">Sign Out</button>
+    <button class="signout" onclick="location.href='dash.html'">GO BACK</button>
+    <button class="signout" onclick="location.href='login.html'">SIGN OUT</button>
 </div>
 </body>
 </html>
