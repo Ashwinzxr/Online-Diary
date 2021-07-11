@@ -25,7 +25,7 @@ $query= "INSERT INTO $username (filen,dof) VALUES('$filename','$dof') ";
 $run=mysqli_query($conn,$query);
 if(!$run)
     {
-        echo mysqli_error();
+        echo "error";
 
     }
 else
