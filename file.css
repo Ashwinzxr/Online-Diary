@@ -54,7 +54,8 @@ table {
 {
   margin-left: 22%;
   padding: 0.6rem 1.8rem;
-  background-color: #1179e7;
+  background: rgb(63,94,251);
+	background: linear-gradient(159deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
   border: none;
   border-radius: 25px;
   color: #fff;
@@ -64,20 +65,22 @@ table {
 }
 .signout
 {
+    font-weight: 500;
   margin-left: 45%;
   margin-top: 1%;
   padding: 0.6rem 1.8rem;
-  background-color:black;
+  background-color:white;
   border: none;
   border-radius: 25px;
-  color:white;
+  color:black;
   text-transform: uppercase;
   cursor: pointer;
   text-decoration: none;
-  color: #fff;
+  
 }
 
 #sub:hover
 {
-    background: #205894;
+    background: rgb(63,94,251);
+	background: linear-gradient(304deg, rgba(63,94,251,0.7) 0%, rgba(252,70,107,0.7) 100%);
 }
