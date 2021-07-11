@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 body
 {
     background: rgb(63,94,251);
@@ -5,9 +7,14 @@ body
 }
 p
 {
+  position: fixed;
+  top: 30%;
+  left: 25%;
   text-align: center;
   align-content: center;  
-  margin-top: 300px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: large;
+  border-radius: 50px;
+  background-color: white;
+  width: 50%;
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
 }
