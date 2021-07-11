@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 * {
 	border: 0;
@@ -10,8 +13,8 @@
 
 .TITLE {
 	padding-top: 70px;
-	font-size: 100px;
-	font-family: 'Monoton', cursive;
+	font-size: 130px;
+	font-family: 'Festive', cursive;
 }
 .aboutus {
 	color: white;
@@ -27,8 +30,8 @@ h2{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	outline: 2px solid black;
-	background-image: url(bg1.jpg);
+	background: rgb(63,94,251);
+background: linear-gradient(159deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -37,7 +40,7 @@ h2{
 	
 }
 #two {
-	background: black;
+	background: white;
 	height: 500px;
 	display: flex;
 	align-items: center;
@@ -48,19 +51,21 @@ h2{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	top: 0;left: 0;
 	width: 100%;
 	height: 300px;
 	bottom: 400px;
-	background-image: url(car.jpg);
+	background: rgb(63,94,251);
+background: linear-gradient(159deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 	background-size: cover;
 	background-attachment: fixed;
 }
 #four {
 	height: 500px;
-	background-color:black;
+	background-color:white;
 }
  li,a,button {
- 	font-family: 'Fugaz One', cursive;
+ 	font-family: 'Poppins', sans-serif;
  	font-weight: 500;
  	font-size: 16px;
  	color: white;
@@ -69,7 +74,7 @@ h2{
   header {
   	height: 70px;
   	width: 100%;
-  	background-color: black;
+  	background-color: white;
   	position: fixed;
   	display: flex;
   	justify-content: flex-end;
@@ -95,4 +100,14 @@ h2{
   .navlinks li a:hover {
   	background-color: rgba(0, 136, 169, 0.5);
   }
-  
+  .aboutus {
+  	font-size: 100px;
+  	color: black;
+  }
+  .logo {
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	width: 70px;
+  	height: 70px;
+  }
