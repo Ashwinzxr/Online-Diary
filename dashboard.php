@@ -28,7 +28,7 @@ if(!$run)
     }
 else
 {
-    echo "<html><head><link href='dash1.css' rel='stylesheet'></head><body><p>File Inserted Successfully</p></body></html>";
+    echo "<html><head><link href='dash1.css' rel='stylesheet'></head><body><p>Successful</p></body></html>";
     echo '<meta http-equiv= "refresh" content="1; url=/DIARY/dash.html"/>';    
 
 }    
