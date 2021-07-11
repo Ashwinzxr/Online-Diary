@@ -102,7 +102,7 @@ background: linear-gradient(159deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100
   }
   .navlinks li a:hover {
 	background: rgb(63,94,251);
-	background: linear-gradient(304deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+	background: linear-gradient(304deg, rgba(63,94,251,0.7) 0%, rgba(252,70,107,0.7) 100%);
   }
   .aboutus {
   	font-size: 100px;
