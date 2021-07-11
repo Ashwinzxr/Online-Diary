@@ -35,7 +35,7 @@ else
     {
         session_start();
         $_SESSION['uname'] =$usname;
-        echo '<meta http-equiv= "refresh" content="1; url=/DIARY-/dashboard.php"/>';
+        echo '<meta http-equiv= "refresh" content="1; url=/DIARY-/dash.html"/>';
     }
 }
 echo "</html>";
