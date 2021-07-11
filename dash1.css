@@ -1,0 +1,13 @@
+body
+{
+    background: rgb(63,94,251);
+	background: linear-gradient(159deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+p
+{
+  text-align: center;
+  align-content: center;  
+  margin-top: 300px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: large;
+}

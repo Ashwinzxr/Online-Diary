@@ -61,7 +61,7 @@ else
                         $sql = "CREATE TABLE $usname(
                         id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, 
                         filen TEXT NOT NULL,
-                        email VARCHAR(70) NOT NULL UNIQUE        
+                        dof VARCHAR(70) NOT NULL        
                         )"; 
                         if(mysqli_query($conn, $sql)) 
                         { 

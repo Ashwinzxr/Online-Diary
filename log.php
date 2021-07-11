@@ -5,7 +5,7 @@ $password="";
 $dbname="diary";
 
 echo "<html>";
-echo "<head> <link href='signup.css' type='stylesheet'></head>";
+echo "<head> <link href='signup.css' rel='stylesheet'></head>";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) 
