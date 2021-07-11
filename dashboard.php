@@ -9,16 +9,13 @@ if(!$conn)
 
 }
 
-//error reporting 
-ini_set ("display_errors", "1");
-error_reporting(E_ALL);
 
 $file=$_POST['inp'];
+$fname=$_POST['fn'];
 $username=$_SESSION['uname'];
-$filename = "diary".date("Y-m-d").".txt";
-$path = "Source/".$filename;
+$filename = "$fname.txt";
+$path="source/".$filename;
 $dof=date("y/m/d");
-
 $diary = fopen($path, "a");
 fwrite($diary,$file);
 
@@ -31,11 +28,12 @@ if(!$run)
     }
 else
 {
-    echo "<html><head><link href='dash1.css' rel='stylesheet'></head><body><p>SUCESSFUL</p></body></html>";
-    echo '<meta http-equiv= "refresh" content="1; url=/DIARY-/dash.html"/>';    
+    echo "<html><head><link href='dash1.css' rel='stylesheet'></head><body><p>SUCCESSFUL</p></body></html>";
+    echo '<meta http-equiv= "refresh" content="1; url=/DIARY/dash.html"/>';    
 
 }    
 fclose($diary);
+$conn->close();
 ?>
 
 
