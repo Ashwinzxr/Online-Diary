@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
+
 * {
 	border: 0;
 	margin: 0;
@@ -66,7 +67,7 @@ background: linear-gradient(159deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100
 }
  li,a,button {
  	font-family: 'Poppins', sans-serif;
- 	font-weight: 500;
+ 	font-weight: 1000;
  	font-size: 16px;
  	color: white;
  	text-decoration: none;
@@ -90,15 +91,18 @@ background: linear-gradient(159deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100
   	padding: 0px 20px;
   }
   .navlinks li a {
+	color: white;
   	padding:9px 25px;
-  	background-color: rgba(0, 136, 169, 1.0);
+  	background: rgb(63,94,251);
+	background: linear-gradient(159deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
   	border: none;
   	border-radius: 50px;
   	cursor: pointer;
   	transition: all 0.3s ease 0s;
   }
   .navlinks li a:hover {
-  	background-color: rgba(0, 136, 169, 0.5);
+	background: rgb(63,94,251);
+	background: linear-gradient(304deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
   }
   .aboutus {
   	font-size: 100px;
