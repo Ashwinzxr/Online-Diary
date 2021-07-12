@@ -91,7 +91,7 @@ h2{
   	list-style: none;
   }
   .navlinks li {
-  	display: inline-block;
+	display: inline-block;
   	padding: 0px 20px;
   }
   .navlinks li a {
@@ -102,7 +102,6 @@ h2{
   	border: none;
   	border-radius: 50px;
   	cursor: pointer;
-  	transition: all 0.3s ease 0s;
   }
   .navlinks li a:hover {
 	background: rgb(63,94,251);
@@ -113,7 +112,7 @@ h2{
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-family: 'Oswald', sans-serif;
-  font-size: 30px;
+  	font-size: 30px;
   
   }
   .logo {
@@ -137,3 +136,4 @@ h2{
 	  font-family: 'Righteous', cursive;
 	  letter-spacing: 5px;
   }
+ 
