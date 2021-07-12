@@ -11,7 +11,7 @@ if(!$conn)
 
 
 $username=$_SESSION['uname'];
-echo "<h1>HERE ARE YOUR FILES TO DOWNLOAD , $username</h1>";
+echo "<h1>Here Are Your Files To Download , $username</h1>";
 $query = "SELECT * FROM $username";
 $run = mysqli_query($conn, $query);
 if(!$run)
